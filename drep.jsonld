@@ -68,6 +68,11 @@
         "@type": "Link",
         "label": "blocktrust.dev",
         "uri": "https://blocktrust.dev"
+      },
+      {
+        "@type": "Link",
+        "label": "LinkedIn",
+        "uri": "https://www.linkedin.com/in/codedata/"
       }
     ]
   }
