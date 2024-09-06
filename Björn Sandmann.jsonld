@@ -1,0 +1,85 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP119:body",
+      "@context": {
+        "references": {
+          "@id": "CIP119:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Identity": "CIP119:IdentityReference",
+            "Link": "CIP119:LinkReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP119:referenceHash",
+              "@context": {
+                "hashDigest": "CIP119:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "paymentAddress": "CIP119:paymentAddress",
+        "givenName": "CIP119:givenName",
+        "image": "CIP119:image",
+        "objectives": "CIP119:objectives",
+        "motivations": "CIP119:motivations",
+        "qualifications": "CIP119:qualifications",
+        "doNotList": "CIP119:doNotList"
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "hashAlgorithm": "blake2b-256",
+  "body": {
+    "doNotList": false,
+    "givenName": "Björn Sandmann",
+    "motivations": "My engagement in Cardano governance is initially driven by two key factors. First, the aim to contribute to a long-term governance vision that also incorporates voting rights for individuals without large ADA reserves, utilizing Decentralized Identifiers. Second, I seek to provide stability in the early governance phase by building upon existing achievements and implementing measured changes to mitigate risks of early failure.",
+    "objectives": "I support the integration of identity solutions based on open standards such as the W3C DID specification, Verifiable Credentials, and Verifiable Presentations. I further would prioritize governance actions that promote real-world use cases over self-referencing crypto narratives. Additionally, I advocate for implementing a restrained budgeting process that maintains fiscal responsibility and long term planning while incentivizing new ecosystem participants.",
+    "paymentAddress": "addr1qx743d2vld8ct74058z6lhxsxh0s4hdvdsz3gf65ajde0zasd7v8csmr487wv988hnlafsaluz287a4f6uwf37m7aa5swds58w",
+    "qualifications": "My qualifications for contributing to Cardano governance stem from long-time participation in the Cardano and Hyperledger Identus (Atala PRISM) communities. I have a proven track record of developing and delivering identity-focused software through Catalyst and beyond. As an experienced .NET developer, I have a history of collaboration with both startups and enterprises. Furthermore, I am a successful entrepreneur managing real-world businesses with employees.",
+    "references": [
+      {
+        "@type": "Link",
+        "label": "X",
+        "uri": "https://twitter.com/bsandmann"
+      },
+      {
+        "@type": "Link",
+        "label": "blocktrust.dev",
+        "uri": "https://blocktrust.dev"
+      },
+      {
+        "@type": "Link",
+        "label": "LinkedIn",
+        "uri": "https://www.linkedin.com/in/codedata/"
+      },
+      {
+        "@type": "Identity",
+        "label": "X",
+        "uri": "https://twitter.com/bsandmann"
+      }
+    ]
+  }
+}
