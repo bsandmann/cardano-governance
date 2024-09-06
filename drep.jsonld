@@ -1,4 +1,4 @@
-﻿{
+{
   "@context": {
     "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
     "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
@@ -11,8 +11,8 @@
           "@container": "@set",
           "@context": {
             "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
-            "Identity": "CIP100:IdentityReference",
-            "Link": "CIP100:LinkReference",
+            "Identity": "CIP119:IdentityReference",
+            "Link": "CIP119:LinkReference",
             "Other": "CIP100:OtherReference",
             "label": "CIP100:reference-label",
             "uri": "CIP100:reference-uri",
@@ -53,6 +53,7 @@
   "authors": [],
   "hashAlgorithm": "blake2b-256",
   "body": {
+    "doNotList": false,
     "givenName": "Björn Sandmann",
     "motivations": "My engagement in Cardano governance is initially driven by two key factors. First, the aim to contribute to a long-term governance vision that also incorporates voting rights for individuals without large ADA reserves, utilizing Decentralized Identifiers. Second, I seek to provide stability in the early governance phase by building upon existing achievements and implementing measured changes to mitigate risks of early failure.",
     "objectives": "I support the integration of identity solutions based on open standards such as the W3C DID specification, Verifiable Credentials, and Verifiable Presentations. I further would prioritize governance actions that promote real-world use cases over self-referencing crypto narratives. Additionally, I advocate for implementing a restrained budgeting process that maintains fiscal responsibility and long term planning while incentivizing new ecosystem participants.",
@@ -73,6 +74,11 @@
         "@type": "Link",
         "label": "LinkedIn",
         "uri": "https://www.linkedin.com/in/codedata/"
+      },
+      {
+        "@type": "Identity",
+        "label": "X",
+        "uri": "https://twitter.com/bsandmann"
       }
     ]
   }
